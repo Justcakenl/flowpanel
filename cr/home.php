@@ -4,7 +4,7 @@ include("../kaas.php");
 
 if(isset($_SESSION["username"])){
     $usernamea = $_SESSION["username"];
-    $bericht = "Welkom $usernamea";
+    $bericht = "Welcome! $usernamea";
     
 
 }
@@ -100,7 +100,7 @@ if(isset($_POST["demote"])){
     if($user == "DNEX"){
         ?>
             <script>
-                alert("Deze gebruiker kan geen degradatie ontvangen!");
+                alert("This user can not receive relegation!");
                 </script>
             <?php
     }
@@ -112,7 +112,7 @@ if(isset($_POST["demote"])){
         else{
             ?>
             <script>
-                alert("U kan geen degradatie meer geven!");
+                alert("You can no longer give degradation!");
                 </script>
             <?php
         }
@@ -132,7 +132,7 @@ if(isset($_POST["ontslag"])){
     if($user == "DNEX"){
         ?>
             <script>
-                alert("Deze gebruiker kan geen ontslag ontvangen!");
+                alert("This user can not receive a dismissal!");
                 </script>
             <?php
     }
@@ -225,7 +225,7 @@ if($page == 1){
     <div class="changers">
     <button name="promote" id="promote">Promoveren</button>
     <button name="demote" id="demote">Degraderen</button>
-    <button name="ontslag" id="ontslag">Ontslagen</button>
+    <button name="ontslag" id="dismissal">Ontslagen</button>
     </div>
     <?php
 }

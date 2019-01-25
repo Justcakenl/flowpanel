@@ -8,7 +8,7 @@ if(isset($_SESSION["username"])){
 
 if(isset($_POST["login"])){
     if(empty($_POST["username"]) OR empty($_POST["password"])){
-        echo "Alle velden invullen!";
+        echo "Fill in all fields!";
     }
     else{
         $query = "SELECT * FROM users WHERE username = :username AND password = :password";
